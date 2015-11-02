@@ -1,0 +1,42 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import"ZCControl.h"
+#define WIDTH  [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define TOUTIAO @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=headline&page=%d&page_size=10&catid=headline&version=1.0.4"
+#define DETAIL @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=detail&news_id=%@&version=1.0.4"
+#define ZUQIU @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getList&page=%d&page_size=10&catid=6&version=1.0.4"
+#define LANQIU @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getList&page=%d&page_size=10&catid=7&version=1.0.4"
+#define ZONGHE @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getList&page=%d&page_size=10&catid=12&version=1.0.4"
+
+#define TUKUREMEN @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getPictureList&page_size=10&page=%d&catid=&hot=1&version=1.0.4"
+#define TUKUZUQIU @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getPictureList&page_size=10&page=%d&catid=54&hot=0&version=1.0.4"
+#define TUKULANQIU @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getPictureList&page_size=10&page=%d&catid=55&hot=0&version=1.0.4"
+#define TUKUXINGGAN @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getPictureList&page_size=10&page=%d&catid=60&hot=0&version=1.0.4"
+#define TUKUZONGHE @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getPictureList&page_size=10&page=%d&catid=58&hot=0&version=1.0.4"
+#define TUKUMINGXING @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getPictureList&page_size=10&page=%d&catid=59&hot=0&version=1.0.4"
+
+#define PICDETAIL @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=pictureDetail&news_id=%@&version=1.0.4"
+#define COMMENT @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getNewsCommentLists&page_size=10&page=%d&cat_detail_id=%@&news_id=%@&version=1.0.4"
+#define COMMENT1 @"http://u.api.5usport.com/PHP_works/api/index.php?m=News&a=getNewsCommentLists&page_size=10&page=%d&cat_detail_id=%@&news_id=%@&version=1.0"
+
+
+
+
+
+
+
+#endif
